@@ -32,9 +32,11 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 
 
-Na pasta principal do projeto, navegue até a pasta do backend:
-use no terminal: cd backend
-cd backend
+BACKEND-PASSO A PASSO PARA RODAR A APLICAÇÃO
+
+você deve renomear o arquivo .env.example para .env , esse arquivo esta dentro da pasta prisma que está contida dentro da pasta backend do projeto
+abra o terminal e navegue até a pasta do backend , use no terminal: cd backend
+em seguida 
 npm install                         # instalar dependências
 npx prisma generate                  # gerar Prisma Client
 npx prisma migrate dev --name init   # criar banco SQLite
@@ -47,3 +49,10 @@ use no terminal: cd frontend
 npm install
 npm run dev                   # Inicia o servidor Next.js (http://localhost:3000/login)
 
+
+após fazer o passo a passo acima acesse a url para ver a aplicação rodando
+
+http://localhost:3000            -> área de login
+http://localhost:3000/tasks/new  -> área de listagem de tarefas
+http://localhost:3001/tasks      -> área do backend mostrando os dados
+http://localhost:3001            -> porta onde roda o backend 
